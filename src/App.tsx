@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {TableOfNames, ButtonBar} from './components'
+import {Container, Table} from 'react-bootstrap'
+import { MODES } from './config'
 
 function App() {
+  const [mode, setMode] = useState<string>("normal")
+  const [findName, setFindName] = useState<string>("nothing")
+
+  const doNothing = (d?: string) => console.log(d);
+  const listPopular = () => {
+    setMode(MODES.POPULAR)
+  }
+  const listAlphabetical = () => {
+    setMode(MODES.ALPHABETICAL)
+  }
+
+  const listTotalAmount = () => {
+    setMode(MODES.TOTAL_AMOUNT)
+  }
+  const listNameAmount = (name: string) => {
+    setMode(MODES.AMOUNT_OF_NAME)
+    setFindName(name)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="justify-content-md-center" style={{ marginTop: "1vh",fontFamily: "Inconsolata", fontWeight: 900}}>
+      <ButtonBar listPopular={listPopular} listAlphabetical={listAlphabetical}  totalAmount={listTotalAmount}  nameAmount={(name) => listNameAmount(name)} />
+      <TableOfNames mode={mode} findName={findName}/>
+    </Container>
   );
 }
-
 export default App;

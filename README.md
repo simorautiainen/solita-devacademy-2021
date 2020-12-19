@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Solita dev-academy name application with Typescript
+This is solita dev-academy name application which details can be found in [https://github.com/solita/dev-academy-2021](https://github.com/solita/dev-academy-2021)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</br>
 
-### `yarn start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+What things you need to install the software and how to install them
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+node.js
+```
+You'll need node.js installed to be able to run npm commands. You can install **node.js** at [https://nodejs.org/en/](https://nodejs.org/en/) for windows. If using linux, check how to install **node.js** on your distripution.
 
-### `yarn test`
+### Installing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A step by step series of examples that tell you how to get a development env running.</br>
+Copy this repository with git clone or download zip. Navigate to the directory and do the following steps.</br>
 
-### `yarn build`
+Installing all the modules
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
+### Launching the app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Launching the app happens when typing following command on project root.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+App which should open at [http://localhost:3000](http://localhost:3000)
+</br>
