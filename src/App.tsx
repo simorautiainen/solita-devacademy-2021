@@ -2,14 +2,13 @@ import React, {useState} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {TableOfNames, ButtonBar} from './components'
-import {Container, Table} from 'react-bootstrap'
+import {Container} from 'react-bootstrap'
 import { MODES } from './config'
 
 function App() {
   const [mode, setMode] = useState<string>("normal")
   const [findName, setFindName] = useState<string>("nothing")
 
-  const doNothing = (d?: string) => console.log(d);
   const listPopular = () => {
     setMode(MODES.POPULAR)
   }
